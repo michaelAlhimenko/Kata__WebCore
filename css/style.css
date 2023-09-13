@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'TTLakes';
+    src: url('../fonts/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Bold.woff') format('woff'),
+        url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTLakes';
+    src: url('../fonts/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Medium.woff') format('woff'),
+        url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTLakes';
+    src: url('../fonts/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Regular.woff') format('woff'),
+        url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTLakesCompressed';
+    src: url('../fonts/TTLakesCompressed-Medium.eot');
+    src: local('TT Lakes Compressed Medium'), local('TTLakesCompressed-Medium'),
+        url('../fonts/TTLakesCompressed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakesCompressed-Medium.woff') format('woff'),
+        url('../fonts/TTLakesCompressed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+.round-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:0;
+    background-color: #FF3E79;
+    padding: 10px;
+}
+.divider{
+    background-color: #EAEAEA;
+    height: 32px;
+    width: 2px;
+    border-radius: 50px;
+    margin: 0 20px 0 16px;
+}
+.round-button > img {
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'TTLakes';
+    margin: 0;
+    background-color: #F8F8F8;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 19px 16px;
+    height: 51px;
+    background-color: white;
+}
+.header__logo{
+    max-width: 100%;
+    height: 50px;
+    margin: 0 17px 0 17px;
+}
+.header__divider-logo{
+    display: none;
+    margin: 0 20px;
+}
+.header__button-repair{
+    margin-right: 16px;
+}
+.buttons-connections{
+    display: none;
+}
+.header__button{
+    
+}
+
+.h1{
+    font-weight: 700;
+    font-size: 28px;
+    border-left: 4px solid #41F6D7;
+    padding-left: 12px;
+}
+.navigation{
+    margin-bottom: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.navigation__list{
+    display: flex;
+    list-style-type: none;
+    overflow: auto;
+    white-space: nowrap;
+    padding-bottom: 8px;
+    padding-left: 3px;
+}
+.navigation__item{
+    font-weight: 500;
+    padding: 8px 9px 8px 16px;
+    width: auto;
+}
+.navigation__item_active{
+    border: 2px solid #b8ffec;
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px 0px rgba(126, 126, 130, 0.80);
+    background-color: #FFFFFF;
+}
+.navigation__item > a{
+    text-decoration: none;
+    color: #7E7E82;
+}
+.services{
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+.services__image {
+    /* max-width: 100%;
+    height: auto; */
+    
+        width: 100vw;
+        position: relative;
+        margin-left: -50vw;
+        left: 50%;
+        max-width: inherit !important;
+    
+}
+.services__button{
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: #F8F8F8;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.services__arrow{
+    margin-right: 8px;
+    padding: 6px 8px;
+    background: url('../icons/icon.svg') no-repeat;
+    background-position: 50% 50%;
+    width: 7.50px;
+    height: 10px;
+
+}
+@media(min-width: 500px){
+    .services__image{
+        width: 70vw;
+    }
+}
+@media(min-width: 768px){
+    .buttons-connections{
+        display: block;
+    }
+    
+    .header__divider-logo{
+        display: block;
+    }
+    .header__logo{
+        margin-right: 250px;
+        margin-left: 0;
+    }
+    .buttons-connections__chat{
+        margin: 0 20px 0 20px;
+    }
+    .services{
+        display: flex;
+    }
+    .services__text{
+        min-width: 312px;
+    }
+    .services__image{
+        position: static;
+        width: 360px;
+        margin-left: 48px;
+    }
+}
