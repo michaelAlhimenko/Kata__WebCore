@@ -74,6 +74,8 @@
         padding: 0;
         font-family: 'TTLakes';
         cursor: pointer;
+        display: flex;
+        align-items: center;
     }
     .header-desktop__button > p{
         margin-right: 8px;

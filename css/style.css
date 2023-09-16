@@ -130,7 +130,7 @@ h1::before{
     width: auto;
 }
 
-.navigation__item_active{
+.navigation__item--active{
     border: 2px solid #b8ffec;
     border-radius: 10px;
     box-shadow: 0px 4px 5px 0px rgba(126, 126, 130, 0.80);
