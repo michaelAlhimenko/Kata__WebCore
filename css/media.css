@@ -1,0 +1,98 @@
+@media(min-width: 500px){
+    .services__image{
+        width: 70vw;
+    }
+}
+@media(min-width: 768px){
+    
+    .buttons-connections{
+        display: block;
+    }
+    .buttons-connections__chat{
+        margin: 0 20px 0 20px;
+    }
+    .header__divider-logo{
+        display: block;
+    }
+    .header__logo{
+        margin-right: 250px;
+        margin-left: 0;
+    }
+    .h1{
+        margin-bottom: 32px;
+    }
+    h1::before{
+        margin-right: 20px;
+    }
+    .navigation{
+        margin-left: 24px;
+        margin-bottom: 32px;
+    }
+    .navigation__item{
+        margin-left: 14px;
+    }
+    .navigation__list > .navigation__item:nth-child(1){
+        margin-left: 0;
+    }
+    .services{
+        display: flex;
+        padding-left: 24px;
+        padding-right: 36px;
+    }
+    .services__text{
+        min-width: 312px;
+        height: 160px;
+        line-height: 20px;
+    }
+    .services__image{
+        position: static;
+        width: 360px;
+        margin-left: 48px;
+    }
+}
+@media(min-width: 1120px){
+    .header{
+        display: none;
+    }
+    .header-desktop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 32px;
+        padding-top: 42px;
+    }
+    .header-desktop__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    .header-desktop__button{
+        border:0;
+        background-color: #F8F8F8;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 32px;
+        padding: 0;
+        font-family: 'TTLakes';
+        cursor: pointer;
+    }
+    .header-desktop__button > p{
+        margin-right: 8px;
+    }
+    h1::before {
+        margin-right: 30px;
+    }
+    .navigation{
+        margin-left: 36px;
+    }
+    .navigation__item{
+        padding: 9px 22px 9px 22px;
+    }
+    .services{
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .services__image{
+        width: 531px;
+        height: 307px;
+    }
+}
