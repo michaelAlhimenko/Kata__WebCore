@@ -118,9 +118,8 @@ h1::before{
 }
 .navigation__list{
     display: flex;
-    flex-wrap: wrap;
     list-style-type: none;
-    overflow: auto;
+    overflow: scroll;
     white-space: nowrap;
     padding-bottom: 8px;
 }

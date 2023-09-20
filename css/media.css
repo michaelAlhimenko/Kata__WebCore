@@ -86,6 +86,9 @@
     .navigation{
         margin-left: 36px;
     }
+    .navigation__list{
+        flex-wrap: wrap;
+    };
     .navigation__item{
         padding: 9px 22px 9px 22px;
     }
