@@ -179,7 +179,6 @@ h1::before{
 .services__arrow{
     margin-right: 8px;
     padding: 6px 8px;
-    background: url('../icons/icon.svg') no-repeat;
     background-position: 50% 50%;
     width: 7.50px;
 
