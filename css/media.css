@@ -33,6 +33,7 @@
     }
     .navigation__list > .navigation__item:nth-child(1){
         margin-left: 0;
+        overflow: visible;
     }
     .services{
         display: flex;
@@ -88,6 +89,7 @@
     }
     .navigation__list{
         flex-wrap: wrap;
+        overflow: visible;
     };
     .navigation__item{
         padding: 9px 22px 9px 22px;
