@@ -1,6 +1,8 @@
 @media(min-width: 500px){
     .services__image{
         width: 70vw;
+        margin-left: 0; 
+        left: 0;
     }
 }
 @media(min-width: 768px){
@@ -25,7 +27,7 @@
         margin-right: 20px;
     }
     .navigation{
-        margin-left: 24px;
+        padding-left: 24px;
         margin-bottom: 32px;
     }
     .navigation__item{
@@ -35,10 +37,12 @@
         margin-left: 0;
         overflow: visible;
     }
-    .services{
-        display: flex;
+    .main{
         padding-left: 24px;
         padding-right: 36px;
+    }
+    .services{
+        display: flex;
     }
     .services__text{
         min-width: 312px;
@@ -85,7 +89,7 @@
         margin-right: 30px;
     }
     .navigation{
-        margin-left: 36px;
+        padding-left: 36px;
     }
     .navigation__list{
         flex-wrap: wrap;
@@ -94,7 +98,7 @@
     .navigation__item{
         padding: 9px 22px 9px 22px;
     }
-    .services{
+    .main{
         padding-left: 36px;
         padding-right: 36px;
     }
