@@ -7,27 +7,73 @@
         <link rel="stylesheet" type="text/css" href="css/media.css">
         <title>Document</title>
     </head>
-    <body>
+    <body>            
+        <article class="menu menu-mobile">
+            <section>
+                <header class="menu-mobile__header">
+                        <div class="menu-mobile__wrapper">
+                            <button type="button" class="menu-mobile__button round-button">
+                                <img src="./icons/cross.svg" alt="">
+                            </button>
+                            <a href="#"><img class="menu-mobile__logo" src="img/logo.png" alt="Логотип компании"></a>
+                        </div>
+                        <button type="button" class=" round-button">
+                            <img src="./icons/loupe.svg" alt="Иконка лупы">
+                        </button>
+                </header>
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__list__item menu-mobile__list__item--active"><a href="#">Ремонт техники</a></li>
+                    <li class="menu-mobile__list__item "><a href="#">Услуги и сервисы</a></li>
+                    <li class="menu-mobile__list__item"><a href="#">Корпаративным клиентам</a></li>
+                    <li class="menu-mobile__list__item"><a href="#">Продавцам техники</a></li>
+                    <li class="menu-mobile__list__item"><a href="#">Партнерам</a></li>
+                    <li class="menu-mobile__list__item"><a href="#">Производителям</a></li>
+                    <li class="menu-mobile__list__item"><a href="#">Наши сервисные услуги</a></li>
+                    <li class="menu-mobile__list__item"><a href="#">Контакты</a></li>
+                </ul>
+            </section>
+            <section class="menu-mobile__connection">
+                <article class="menu-mobile__connections__buttons buttons-connections ">
+                    <button type="button" class="round-button buttons-connections__call">
+                        <img src="icons/call.svg" alt="Кновка вызова ">
+                    </button>
+                    <button type="button" class="round-button ">
+                        <img src="icons/chat.svg" alt="Кнопка вызова чата">
+                    </button>
+                    <button type="button" class="round-button buttons-connections__profile">
+                        <img src="icons/profile.svg" alt="Кнопка личного кабинета">
+                    </button>
+                </article>
+                <a class="menu-mobile__email" href="#">mail@cps.com</a>
+                <a class="menu-mobile__tel"  href="tel:+88008908900">8 800 890 8900</a>
+                <div class="menu-mobile__lang">
+                    <button class="menu-mobile__lang--active" type="button">RU</button>
+                    <button class=""  type="button">EN</button>
+                    <button class=""  type="button">CH</button>
+                </div>
+            </section>
+        </article>
+        <section class="content">
             <header class="header">
                 <div class="header__wrapper">
                     <button type="button" class="round-button header__button-burger ">
                         <img src="icons/burger.svg" alt="Меню сайта">
                     </button>
-                        <div class="divider header__divider-logo"></div>
-                        <a href="#"><img class="header__logo" src="img/logo.png" alt="Логотип компании"></a>
+                    <div class="divider header__divider-logo"></div>
+                    <a href="#"><img class="header__logo" src="img/logo.png" alt="Логотип компании"></a>
                 </div>
-                    <div class="header__wrapper">
-                        <article class="buttons-connections">
-                            <button type="button" class="round-button buttons-connections__call">
-                                <img src="icons/call.svg" alt="Кновка вызова ">
-                            </button>
-                            <button type="button" class="round-button buttons-connections__chat">
-                                <img src="icons/chat.svg" alt="Кнопка вызова чата">
-                            </button>
-                            <button type="button" class="round-button buttons-connections__profile">
-                                <img src="icons/profile.svg" alt="Кнопка личного кабинета">
-                            </button>
-                        </article>
+                <div class="header__wrapper">
+                    <article class="buttons-connections">
+                        <button type="button" class="round-button buttons-connections__call">
+                            <img src="icons/call.svg" alt="Кновка вызова ">
+                        </button>
+                        <button type="button" class="round-button buttons-connections__chat">
+                            <img src="icons/chat.svg" alt="Кнопка вызова чата">
+                        </button>
+                        <button type="button" class="round-button buttons-connections__profile">
+                            <img src="icons/profile.svg" alt="Кнопка личного кабинета">
+                        </button>
+                    </article>
                     <div class="divider header__divider-button"></div>
                     <button type="button" class="round-button header__button-repair">
                         <img src="icons/repair.svg" alt="Кнопка для отправки заявки">
@@ -35,7 +81,7 @@
                     <button type="button" class="round-button header__button-status">
                         <img src="icons/checkstatus.svg" alt="Кнопка проверки статуса ремонта">
                     </button>
-                    </div>
+                </div>
             </header>
             <header class="header-desktop">
                 <h1 class="h1">Услуги и сервисы</h1>
@@ -80,5 +126,7 @@
                     <img class="services__image" src="./img/image.png" alt="Image logo firm">
                 </article>
             </main>
+        </section>
+        <script src="./js/script.js"></script>
     </body>
 </html>

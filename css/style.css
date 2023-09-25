@@ -48,10 +48,19 @@
     border:0;
     background-color: #FF3E79;
     padding: 10px;
+    cursor: pointer;
 }
 .round-button > img {
     width: 100%;
     height: 100%;
+}
+.round-button:hover, .round-button:focus{
+    box-shadow: 0px 0px 9px 1px #7E7E82;
+    transition: 0.2s;
+}
+.round-button:hover img{
+    transition: 0.3s;
+    transform: scale(1.1);
 }
 .divider{
     background-color: #EAEAEA;
@@ -65,9 +74,13 @@ body{
     margin: 0;
     background-color: #F8F8F8;
 }
-ul, li{
+ul, li, a, button{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: #1B1C21;
+    list-style: none;
+    font-family: 'TTLakes';
 }
 
 .header{
@@ -100,6 +113,9 @@ ul, li{
     display:none;
 }
 .buttons-connections{
+    display: none;
+}
+.content{
     display: none;
 }
 .h1{
@@ -181,6 +197,128 @@ h1::before{
     padding: 6px 8px;
     background-position: 50% 50%;
     width: 7.50px;
+}
+.menu{
+    box-sizing: border-box;
+    width: 320px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left:0px;
+    transition: 1s;
+    z-index: 10;
+    height: 100%;
+}
+.menu--active{
+    left:0px;
+    transition: 1s;
+}
+.menu-mobile{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 19px;
+    padding-bottom: 32px;
+}
+.menu-mobile__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    margin-bottom: 20px;
 
+}
+.menu-mobile__logo{
+    margin-left: 16px;
+}
+.menu-mobile__list{
+    padding: 0 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.menu-mobile__list__item{
+    margin-bottom: 32px;
+    display: block;
+}
+.menu-mobile__list__item {
+    height: 25px;
+}
+.menu-mobile__list__item > a::after {
+    display: block;
+	position: relative;
+	left: 0; 
+    top: 5px;
+	width: 0;
+	height: 2px; 
+	background-color: #FF3E79;
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+.menu-mobile__list__item > a:hover::after,
+.menu-mobile__list__item > a:focus::after{
+    width: 80%;
+}
+
+.menu-mobile__list__item > a:last-child{
+    margin-bottom: 0;
+}
+.menu-mobile__list__item--active{
+    height: 25px;
+}
+.menu-mobile__list__item--active > a{
+    color: #7E7E82;
+    position: relative;
+    left: -3px;
+}
+.menu-mobile__list__item--active > a:hover::after,
+.menu-mobile__list__item--active > a:focus::after{
+    width: 0;
+}
+
+.menu-mobile__list__item--active::before{
+    content:url(../icons/highlight-mobile.png);
+    vertical-align:middle;
+    position: relative;
+    left: -24px;
+}
+.menu-mobile__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.buttons-connections__menu{
+    display: flex;
+}
+.menu-mobile__connection{
+    padding: 0 24px;    
+    display: flex;
+    flex-direction: column;
+}
+.menu-mobile__connections__buttons{
+    margin-bottom: 16px;
+    display: block;
+}
+.menu-mobile__connections__buttons > button {
+    margin-right: 16px;
+}
+.menu-mobile__email{
+    margin-bottom: 12px;
+}
+.menu-mobile__tel{
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.menu-mobile__lang > button{
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu-mobile__lang--active{
+    color: #7E7E82;
 }
 
